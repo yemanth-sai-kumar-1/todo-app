@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.todo-app {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    color: #5f20cc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    text-align: center; 
+    align-self: center;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="file"],
+button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+    padding: 8px;
+    width: auto;
+}
+
+button {
+    background-color: #5f20cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4c1a9c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li.checked {
+    background-color: #eaeaea; /* Lighter background for checked tasks */
+}
+
+li span {
+    text-decoration: none;
+}
+
+li a {
+    color: #5f20cc;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+button.delete {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #ff3b30;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+}
+.todobox{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+button.delete:hover {
+    background-color: #ff5347;
+}
+.checked {
+    text-decoration: line-through;
+    opacity: 0.5; /* Optionally reduce opacity for checked items */
+}
